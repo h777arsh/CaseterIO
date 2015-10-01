@@ -9,3 +9,6 @@ android:
     - android-21
   licenses:
     - '.+'
+script:
+  # Sonatype bypass
+  - ./gradlew clean assemble check  
