@@ -4,6 +4,9 @@ android:
     - build-tools-22.0.1
     - android-22
     - extra
+env:
+ global:
+    - ADB_INSTALL_TIMEOUT=8
 script:
   - echo $ADB_INSTALL_TIMEOUT
   - android list target
