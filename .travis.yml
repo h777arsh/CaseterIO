@@ -4,3 +4,7 @@ android:
     - build-tools-22.0.1
     - android-22
     - extra
+script:
+  - echo $ADB_INSTALL_TIMEOUT
+  - android list target
+  - ./gradlew connectedAndroidTest
